@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISCAS 2027 — VLM Robot FPGA Demo</title>
+<style>body{margin:0;background:#101826;color:#eef3fa;font:16px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:36px 20px}h1{font-size:clamp(24px,4vw,36px);line-height:1.25}p{color:#bfccde}video{display:block;width:100%;background:#000;border-radius:8px}a{color:#8dccff}small{color:#aebed3}.meta{margin-bottom:24px}</style>
+</head><body><main><small>ISCAS 2027 · Live Demonstration</small>
+<h1>3-s Time to First Token for a Vision-Language Model on a 7-W Robot FPGA</h1>
+<p class="meta">Chuqi Zhao · Yuqi Guo · Ruiqi Tang · Yucheng Sun</p>
+<video controls playsinline preload="metadata"><source src="iscas2027_demo_a53_cuda.mp4" type="video/mp4">Your browser does not support embedded video. Use the download link below.</video>
+<p>2 minutes 3 seconds. Recorded robot-camera scenes show trash, shadows, a cable, a closing door and a cat. The video also presents measured first-token latency comparisons for the KV260 Cortex-A53 CPU, FPGA accelerator and Jetson Nano CUDA.</p>
+<p>The base-model comparison uses the same ten source images and questions. A53 uses Q8_0 weights, FPGA GEMM uses INT8 arithmetic and Nano CUDA uses F16 weights. Nano power and energy were not measured. The h2 cat comparison is shown separately. These are recorded scenes and saved measurements, rather than a simultaneous capture of the three platforms.</p>
+<p><a href="iscas2027_demo_a53_cuda.mp4" download>Download the MP4</a> · <a href="https://github.com/vackyzhao/iscas2027-live-demo">Public repository</a></p>
+</main></body></html>
